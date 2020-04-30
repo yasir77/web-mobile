@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <p><a href="../index.html">Home</a></p>
+    <img src="img/saylani-logo.png" alt="Saylani">
+    <h1 class="ass2-title">Student Registration Form</h1>
+    <div class="rg-form">    
+        <form action="action.html">
+            <label for="fname">FIRST NAME</label><input type="text" maxlength="30" placeholder="Enter first Name" name="fname" id="">
+             (max 30 characters a-z and A-Z) <br>
+            <label for="lname">LAST NAME</label><input type="text" maxlength="30" placeholder="Enter last Name" name="lname" id="">
+             (max 30 characters a-z and A-Z) <br>
+            <label for="dob">DATE OF BIRTH</label> 
+            <select name="dob-day" id="">
+                <option value="Day">Day;</option>
+            </select>
+            <select name="dob-month" id="">
+                <option value="Month">Month;</option>
+            </select>
+            <select name="dob-year" id="">
+                <option value="Year">Year;</option>
+            </select> <br>
+            <label for="email">EMAIL ID</label><input type="email" name="email" 
+            placeholder="Enter email address" id=""><br>
+            <label for="mobileNo">MOBILE NUMBER</label><input type="tel" name="mobileNo" placeholder="0300-1111111"
+             pattern="[0-9]{4}-[0-9]{7}" id=""> (10 digit number) <br>
+            <label for="gender">GENDER</label> <span>Male &nbsp;</span><input type="radio" name="gender" value="male" id="">
+            <span>Female &nbsp;</span><input type="radio" name="gender" value="female" id=""><br>
+            <label for="address" style="position: relative;top: -60px;">ADDRESS</label><textarea name="address" id="" cols="50" rows="5"></textarea><br>
+            <label for="city">CITY</label><input type="text" name="city" maxlength="30" placeholder="Enter city name" id="">
+             (max 30 characters a-z and A-Z) <br>
+            <label for="pincode">PIN CODE</label><input type="text" pattern="[0-9]{6}" maxlength="6" name="pincode" placeholder="Enter pin code" id="">
+            (6 digit number) <br> 
+            <label for="state">STATE</label><input type="text" name="state" maxlength="30" placeholder="Enter state" id="">
+             (max 30 characters a-z and A-Z) <br>
+            <label for="country">COUNTRY</label><input type="text" name="country" placeholder="Enter country" id="">
+            <br>
+            <label for="hobbies">HOBBIES</label> 
+            Drawing&nbsp;<input type="checkbox" name="hobbies" id="" value="Drawing">
+            &nbsp&nbsp Singing &nbsp<input type="checkbox" name="hobbies" id="" value="Singing">
+            &nbsp&nbsp Dancing &nbsp<input type="checkbox" name="hobbies" id="" value="Dancing">
+            &nbsp&nbsp Sketching &nbsp<input type="checkbox" name="hobbies" id="" value="Sketching"> <br>
+            <span style="width: 15%;display: inline-block"></span>&nbsp&nbsp Others &nbsp<input type="checkbox" name="hobbies" id="" value="other">
+            <input type="text" name="hobbies" id=""> <br>
+            <label for="qualification">QUALIFICTION</label> <label>Sr.No Examination</label> <label style="text-align: center;">Board</label>
+            <label style="text-align: center;">Percentage</label><label style="text-align: center;">Year of Passing</label><br>
+            <label></label><label>1 <span style="margin-left:10%;"></span>Class X</label>
+            <input type="text" name="classx-board" id="" maxlength="10">
+            <input type="text" name="classx-percentage" id="" pattern="[0-9]{2}.[0-9]{2}">
+            <input type="text" name="classx-year" id="" maxlength="4" pattern="[0-9]{4}"> <br>
+            <label></label><label>2 <span style="margin-left:10%;"></span>Class XII</label>
+            <input type="text" name="classxii-board" id="" maxlength="10">
+            <input type="text" name="classxii-percentage" id="" pattern="[0-9]{2}.[0-9]{2}">
+            <input type="text" name="classxii-year" id="" maxlength="4" pattern="[0-9]{4}"> <br>
+            <label></label><label>3 <span style="margin-left:10%;"></span>Graduation</label>
+            <input type="text" name="graduation-board" id="" maxlength="10">
+            <input type="text" name="graduation-percentage" id="" pattern="[0-9]{2}.[0-9]{2}">
+            <input type="text" name="graduation-year" id="" maxlength="4" pattern="[0-9]{4}"> <br>
+            <label></label><label>4 <span style="margin-left:10%;"></span>Masters</label>
+            <input type="text" name="masters-board" id="" maxlength="10">
+            <input type="text" name="masters-percentage" id="" pattern="[0-9]{2}.[0-9]{2}">
+            <input type="text" name="masters-year" id="" maxlength="4" pattern="[0-9]{4}"> <br>
+            <label></label><label></label><label style="text-align: center;">(10 char max)</label>
+            <label style="text-align: center;">(Upto 2 decimal)</label><br>
+            <label for="courses">COURSES <br> APPLIED FOR</label>BCA &nbsp;<input type="radio" name="courses" value="BCA" id="">
+            &nbsp;&nbsp; B.Com &nbsp;<input type="radio" name="courses" value="B.Com" id="">&nbsp;&nbsp; B.Sc &nbsp;<input type="radio" name="courses" value="B.Sc" id="">
+            &nbsp;&nbsp; B.A &nbsp;<input type="radio" name="courses" value="B.A" id=""><br>
+            <div class="form-btn">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </div>  
+        </form>
+    </div>
+
+    
+</body>
+</html>

@@ -1,0 +1,90 @@
+*{
+    font-family: Lato, sans-serif;
+    text-align: center;
+}
+body{
+    background-color: whitesmoke;
+}
+a{
+    color:orange;
+    font-size: 22px;
+    text-decoration: none;
+}
+.title{
+    text-align: center;
+    font-size: 48px;
+    font-weight: 900;
+    font-family: Montserrat, Helvetica, Arial, sans-serif;
+    color: darkslateblue;
+
+}
+
+.ass2-title{
+    color: blue;
+}
+.rg-form{
+    width: 80%;
+    margin:20px auto;
+    background-color: rgba(66, 55, 160, 0.87);
+    text-align: left;
+    color: white;
+    display: block;
+    
+
+}
+.rg-form form{
+    padding: 20px;
+    text-align: left;
+}
+.rg-form input{
+    margin: 10px 0px 10px 0px;
+    text-align: left;
+    padding: 3px;
+}
+.rg-form select{
+    margin: 10px 0px 10px 0px;
+}
+.rg-form form label{ 
+    width: 15%;
+    display: inline-block;
+    text-align: left;
+}
+
+.rg-form textarea{
+    margin: 10px 0px 10px 0px;
+    text-align: left;
+    display: inline;
+}
+.form-btn input{
+    text-align: center;
+    margin: 0.2em;
+    width: 5%;
+    color: black;
+    font-weight: 600;
+    margin-top: 2%;
+}
+.action-page{
+    margin-top: 5%;
+}
+.action-title{
+    text-align: center;
+    font-size: 38px;
+    font-weight: 900;
+    font-family: Montserrat, Helvetica, Arial, sans-serif;
+    color: rgb(41, 182, 17);
+}
+.action-msg{
+    text-align: center;
+    font-size: 28px;
+    font-weight: 900;
+    font-family: Latto, Helvetica, Arial, sans-serif;
+    color: rgb(122, 17, 182);
+}
+.action-page a{
+    text-align: center;
+    font-size: 28px;
+    font-weight: 900;
+    font-family: Latto, Helvetica, Arial, sans-serif;
+    color: rgb(122, 17, 182);
+    text-decoration: underline;
+}

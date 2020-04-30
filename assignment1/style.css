@@ -1,0 +1,12 @@
+*{
+    font-family: Lato, sans-serif;
+    text-align: center;
+}
+body{
+    background-color: whitesmoke;
+}
+a{
+    color:orange;
+    font-size: 22px;
+    text-decoration: none;
+}

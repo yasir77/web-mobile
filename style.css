@@ -19,16 +19,22 @@ a{
 
 }
 .assignment-outer{
-    width: 80%;
-    margin: 10px auto;
     display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
 }
 .assignment{
     text-align: center;
-    width: 45%;
+    min-width: 40%;
     margin: 20px;
     color:white;
     background-color: rgb(70, 105, 199);
     font-weight: 600;
     font-size: 22px;
+    padding: 10px;
+}
+@media only screen and (max-width: 768px){
+    .assignment{
+        width: 80%;
+    }
 }

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Todo App</title>
+</head>
+
+<body>
+    <div class="container todo-wrapper">
+        <div class="row">
+            <div class="col-12 col-md-12">
+                <h1 class="title text-center">ToDo App</h1>
+            </div>
+            <div class="col-12 col-md-6">
+                <input type="text" name="" id="input-task" class="form-control">
+            </div>
+            <div class="col-12 col-md-3 add-btn">
+                <button class="btn btn-success text-center" onclick="addTask();">Add</button>
+            </div>
+            <div class="col-12 col-md-3 delAll-btn">
+                <button class="btn btn-danger text-center" onclick="delAll();">Delete All</button>
+            </div>
+        </div>
+        <div class="row">
+            <ul id="taskList" class="col-md-12 taskList">
+                
+            </ul>
+        </div>
+
+    </div>
+<script src="app.js"></script>
+</body>
+
+</html>

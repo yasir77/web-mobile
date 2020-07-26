@@ -1,0 +1,35 @@
+*{
+    box-sizing: border-box !important;
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+.row div,.row ul{
+    padding: 2px;
+}
+.add-btn{
+    display: flex;
+    flex-direction: row;
+}
+.add-btn button, .delAll-btn button{
+    width: 100%;
+}
+.todo-wrapper{
+    width: 460px;
+}
+#taskList{
+    list-style-type: none;
+}
+.task{
+    display: flex;
+    direction: row;
+    align-items: center;
+}
+.task{
+    border-bottom: 1px dashed black;
+    margin-top: 2px;
+}
+.edit-btn,.delete-btn{
+ margin-left: 1px;
+}
+.task .task-value{
+    /* border-bottom: 1px solid grey !important; */
+}

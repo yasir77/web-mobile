@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Assignment</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div id="text"></div>
+    <div class="wrapper">
+        <h1>JavaScript Assignment</h1>
+        <p><a href="#" onclick="message();">Chapter 1-67</a></p>
+        <div>
+            <img src="img/mobile1.png" alt="mobile1" onclick="msg();" onmouseover="changeImg(this)" onmouseout="previousImg(this)">
+            <img src="img/mobile2.png" alt="mobile2" onclick="msg();" onmouseover="changeImg(this)" onmouseout="previousImg(this)">
+            <img src="img/mobile3.png" alt="mobile3" onclick="msg();" onmouseover="changeImg(this)" onmouseout="previousImg(this)">
+            <img src="img/mobile4.png" alt="mobile4" onclick="msg();" onmouseover="changeImg(this)" onmouseout="previousImg(this)">
+    
+        </div>
+        <div class="stu-record-wrap">
+            <table class="stu-record">
+                <tr>
+                    <th>Student Name</th>
+                    <th>Father Name</th>
+                    <th>Roll No</th>
+                    <th>Acton</th>
+                </tr>
+                <tr>
+                    <td>Amir</td>
+                    <td>Ali</td>
+                    <td>1</td>
+                    <td onclick="deleteRecord(this)"><button>Delete</button></td>
+                </tr>
+                <tr>
+                    <td>Arif</td>
+                    <td>Ali</td>
+                    <td>2</td>
+                    <td onclick="deleteRecord(this)"><button>Delete</button></td>
+                </tr><tr>
+                    <td>Saeed</td>
+                    <td>Ali</td>
+                    <td>3</td>
+                    <td onclick="deleteRecord(this)"><button>Delete</button></td>
+                </tr><tr>
+                    <td>Shahid</td>
+                    <td>Ali</td>
+                    <td>4</td>
+                    <td onclick="deleteRecord(this)"><button>Delete</button></td>
+                </tr><tr>
+                    <td>Amjad</td>
+                    <td>Ali</td>
+                    <td>5</td>
+                    <td onclick="deleteRecord(this)"><button>Delete</button></td>
+                </tr><tr>
+                    <td>Zain</td>
+                    <td>Ali</td>
+                    <td>6</td>
+                    <td onclick="deleteRecord(this)"><button>Delete</button></td>
+                </tr>
+                <tr>
+                    <td>Zaib</td>
+                    <td>Ali</td>
+                    <td>7</td>
+                    <td onclick="deleteRecord(this)"><button>Delete</button></td>
+                </tr><tr>
+                    <td>Zeeshan</td>
+                    <td>Ali</td>
+                    <td>8</td>
+                    <td onclick="deleteRecord(this)"><button>Delete</button></td>
+                </tr><tr>
+                    <td>Saim</td>
+                    <td>Ali</td>
+                    <td>9</td>
+                    <td onclick="deleteRecord(this)"><button>Delete</button></td>
+                </tr><tr>
+                    <td>Aain</td>
+                    <td>Ali</td>
+                    <td>10</td>
+                    <td onclick="deleteRecord(this)"><button>Delete</button></td>
+                </tr>
+            </table>
+        </div>
+        <div class="counter">
+            <h1>Counter</h1>
+            <button class="plus" onclick="plus();">+</button>&nbsp;<span id="counter">0</span>&nbsp;<button class="minus" onclick="minus();">-</button>
+        </div>
+    </div>
+    
+    
+    <script src="app.js" type="text/javaScript"></script>
+</body>
+
+</html>

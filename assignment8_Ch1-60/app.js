@@ -1180,3 +1180,112 @@ function minus(){
 
 // =========================Chapter # 49-52===========================
 
+// Task 1
+function submit(){
+    var username = document.getElementById("username").value;
+    var fullName = document.getElementById("fullName").value;
+    var email = document.getElementById("email").value;
+    var h1 = document.createElement('h1');
+    h1.innerHTML = "Form Submitted. Your submitted Details are:";
+    var p = document.createElement('p');
+    p.innerHTML = "Username: "+username+"<br>Full Name: "+fullName+"<br>Email: "+email+"";
+    document.getElementById("sign-up").innerHTML = '';
+    document.getElementById('sign-up').appendChild(h1);
+    document.getElementById('sign-up').appendChild(p);
+}
+
+// Task 2
+function readMore(e){
+    e.parentElement.innerHTML = 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, minus optio beatae dolorum error adipisci nemo ab sapiente, perferendis soluta incidunt? Est beatae earum assumenda labore? Facilis adipisci minima inventore.';
+}
+
+// Task 3
+function stuDetails(){
+    var stuName = document.getElementById("stu-name").value;
+    var stuFatherName = document.getElementById("father-name").value;
+    var stuRollNo = document.getElementById("roll-no").value;
+    var stuClass = document.getElementById("stu-class").value;
+    var table = document.getElementById('table-content');
+    var tr = document.createElement('tr');
+    tr.innerHTML = "<td>"+stuName+"</td><td>"+stuFatherName+"</td><td>"+stuRollNo+"</td><td>"+stuClass+"</td><td><button onclick='editStuRecord(this)'>Edit</button><button onclick ='deleteStuRecord(this)'>Delete</button></td>";
+    table.appendChild(tr);
+}
+
+// deleting record
+function deleteStuRecord(e){
+    document.getElementById("stu-record-form").classList.remove("display-none");
+    document.getElementById("stu-record-edit").setAttribute("class","display-none");
+    e.parentElement.parentElement.remove();
+}
+
+// editing record
+function editStuRecord(e){
+    document.getElementById("stu-record-form").setAttribute("class","display-none");
+    document.getElementById("stu-record-edit").classList.remove("display-none");
+
+    window.targetRecord= e.parentElement.parentElement;
+    var stuName = targetRecord.firstChild.childNodes[0].nodeValue;
+    var stuFatherName = targetRecord.childNodes[1].childNodes[0].nodeValue;
+    var stuRollNo = targetRecord.childNodes[2].childNodes[0].nodeValue;
+    var stuClass = targetRecord.childNodes[3].childNodes[0].nodeValue;
+    document.getElementById("upd-stu-name").value = stuName;
+    document.getElementById("upd-father-name").value = stuFatherName;
+    document.getElementById("upd-roll-no").value = stuRollNo;
+    document.getElementById("upd-stu-class").value = stuClass;
+}
+
+// update record
+function updateRecord(){
+    var stuName = document.getElementById("upd-stu-name").value;
+    var stuFatherName = document.getElementById("upd-father-name").value;
+    var stuRollNo = document.getElementById("upd-roll-no").value;
+    var stuClass = document.getElementById("upd-stu-class").value;
+    window.targetRecord.firstChild.childNodes[0].nodeValue = stuName;
+    window.targetRecord.childNodes[1].childNodes[0].nodeValue = stuFatherName;
+    window.targetRecord.childNodes[2].childNodes[0].nodeValue = stuRollNo;
+    window.targetRecord.childNodes[3].childNodes[0].nodeValue = stuClass;
+    document.getElementById("stu-record-form").classList.remove("display-none");
+    document.getElementById("stu-record-edit").setAttribute("class","display-none");
+}
+
+
+// =========================Chapter # 49-53===========================
+
+
+
+
+
+
+// =========================Chapter # 58-67===========================
+
+// Task 1
+var content = document.getElementById("main-content");
+console.log(content.childNodes);
+
+var render =document.getElementsByClassName("render");
+var htm;
+for(var i = 0; i<render.length; i++){
+    htm += render[i].innerHTML;
+
+}
+console.log("Inner HTML of child nodes of render class "+htm);
+
+document.getElementById("first-name").value = "Ali";
+document.getElementById("last-name").value = "Hassan";
+document.getElementById("email").value = "abc@gmail.com";
+
+// Task 2
+console.log("Node Type of element with id form-content is "+document.getElementById("form-content").nodeType);
+console.log("Node Type of element with id lastName is "+document.getElementById("lastName").nodeType+" and it's child node NodeType is "+document.getElementById("lastName").firstChild.nodeType);
+document.getElementById("lastName").firstChild.nodeValue = "Last Name: Smith";
+// getting first element child
+console.log(document.getElementById("main-content").firstElementChild);
+// getting last element  child
+console.log(document.getElementById("main-content").lastElementChild);
+// getting next sibling of element
+console.log(document.getElementById("lastName").nextElementSibling);
+// getting previous sibling of element
+console.log(document.getElementById("lastName").previousElementSibling);
+// getting parent node of element having id email and nodetype
+console.log(document.getElementById("email").parentElement);
+console.log("NodeType of element with id email is "+document.getElementById("email").nodeType);

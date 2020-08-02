@@ -14,13 +14,86 @@
     <div class="wrapper">
         <h1>JavaScript Assignment</h1>
         <p><a href="#" onclick="message();">Chapter 1-67</a></p>
+
+        <h3>Chapter 58-67</h3>
         <div>
-            <img src="img/mobile1.png" alt="mobile1" onclick="msg();" onmouseover="changeImg(this)" onmouseout="previousImg(this)">
-            <img src="img/mobile2.png" alt="mobile2" onclick="msg();" onmouseover="changeImg(this)" onmouseout="previousImg(this)">
-            <img src="img/mobile3.png" alt="mobile3" onclick="msg();" onmouseover="changeImg(this)" onmouseout="previousImg(this)">
-            <img src="img/mobile4.png" alt="mobile4" onclick="msg();" onmouseover="changeImg(this)" onmouseout="previousImg(this)">
-    
+            <h1> DOM </h1>
+            <div id="form-content" class="content">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" />
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" />
+            <label for="email">Email</label>
+            <input type="text" id="email" />
+            </div>
+            <div id="main-content" class="content">
+            <p class="render"> First Name : Alex</p>
+            <p class="render" id="lastName">Last Name: Bank</p>
+            <p class="render"> Email : alexbank@example.com</p>
+            <p class="render"> Country : Pakistan </p>
+            <p class="render"> contact : +92 300 1234567</p>
+            </div>
+            </div>
+
+        <!-- student Details form -->
+        <h3>Chapter 49-52</h3>
+        <form id="stu-record-form">
+            <input type="text" name="fullName" id="stu-name" placeholder="Enter Student Name"><br>
+            <input type="text" name="fatherName" id="father-name" placeholder="Enter Father Name"><br>
+            <input type="text" name="rollNo" id="roll-no" placeholder="Enter Roll No"><br>
+            <input type="text" name="class" id="stu-class" placeholder="Enter Class"><br>
+            <button onclick="stuDetails();" type="button">Save</button>
+        </form>
+        <form id="stu-record-edit" class="display-none">
+            <input type="text" name="fullName" id="upd-stu-name" placeholder="Enter Student Name"><br>
+            <input type="text" name="fatherName" id="upd-father-name" placeholder="Enter Father Name"><br>
+            <input type="text" name="rollNo" id="upd-roll-no" placeholder="Enter Roll No"><br>
+            <input type="text" name="class" id="upd-stu-class" placeholder="Enter Class"><br>
+            <button onclick="updateRecord();" type="button">Update</button>
+        </form>
+        <div id="stu-records">
+            <table id="stu-records-table">
+                    <thead>
+                        <tr>
+                            <th>Student Name</th>
+                            <th>Father Name</th>
+                            <th>Roll No</th>
+                            <th>Class</th>
+                            <th>Edit/Delete</th>
+                        </tr>
+                    </thead>
+                <tbody id="table-content">
+
+                </tbody>
+            </table>
         </div>
+
+        <!-- read more -->
+        <p id="read-more">Hi Lorem ipsum dolor sit, amet consectetur adipisicing elit <a onclick="readMore(this);"
+                href="#" style="color: yellow;">Read More...</a></p>
+        <!-- Sign up form -->
+        <div class="sign-up-wrapper" id="sign-up">
+            <h1>Sign Up Form</h1>
+            <label for="username">Enter Username</label><input type="text" name="username" id="username"><br>
+            <label for="fullName">Enter Full Name</label><input type="text" name="fullName" id="fullName"><br>
+            <label for="email">Enter Email</label><input type="email" name="email" id="email"><br>
+            <button onclick="submit();">Sign Up</button>
+        </div>
+
+        <!-- Mobile Images -->
+        <h3>Chapter 43-48</h3>
+        <div>
+            <img src="img/mobile1.png" alt="mobile1" onclick="msg();" onmouseover="changeImg(this)"
+                onmouseout="previousImg(this)">
+            <img src="img/mobile2.png" alt="mobile2" onclick="msg();" onmouseover="changeImg(this)"
+                onmouseout="previousImg(this)">
+            <img src="img/mobile3.png" alt="mobile3" onclick="msg();" onmouseover="changeImg(this)"
+                onmouseout="previousImg(this)">
+            <img src="img/mobile4.png" alt="mobile4" onclick="msg();" onmouseover="changeImg(this)"
+                onmouseout="previousImg(this)">
+
+        </div>
+
         <div class="stu-record-wrap">
             <table class="stu-record">
                 <tr>
@@ -40,22 +113,26 @@
                     <td>Ali</td>
                     <td>2</td>
                     <td onclick="deleteRecord(this)"><button>Delete</button></td>
-                </tr><tr>
+                </tr>
+                <tr>
                     <td>Saeed</td>
                     <td>Ali</td>
                     <td>3</td>
                     <td onclick="deleteRecord(this)"><button>Delete</button></td>
-                </tr><tr>
+                </tr>
+                <tr>
                     <td>Shahid</td>
                     <td>Ali</td>
                     <td>4</td>
                     <td onclick="deleteRecord(this)"><button>Delete</button></td>
-                </tr><tr>
+                </tr>
+                <tr>
                     <td>Amjad</td>
                     <td>Ali</td>
                     <td>5</td>
                     <td onclick="deleteRecord(this)"><button>Delete</button></td>
-                </tr><tr>
+                </tr>
+                <tr>
                     <td>Zain</td>
                     <td>Ali</td>
                     <td>6</td>
@@ -66,17 +143,20 @@
                     <td>Ali</td>
                     <td>7</td>
                     <td onclick="deleteRecord(this)"><button>Delete</button></td>
-                </tr><tr>
+                </tr>
+                <tr>
                     <td>Zeeshan</td>
                     <td>Ali</td>
                     <td>8</td>
                     <td onclick="deleteRecord(this)"><button>Delete</button></td>
-                </tr><tr>
+                </tr>
+                <tr>
                     <td>Saim</td>
                     <td>Ali</td>
                     <td>9</td>
                     <td onclick="deleteRecord(this)"><button>Delete</button></td>
-                </tr><tr>
+                </tr>
+                <tr>
                     <td>Aain</td>
                     <td>Ali</td>
                     <td>10</td>
@@ -86,11 +166,12 @@
         </div>
         <div class="counter">
             <h1>Counter</h1>
-            <button class="plus" onclick="plus();">+</button>&nbsp;<span id="counter">0</span>&nbsp;<button class="minus" onclick="minus();">-</button>
+            <button class="plus" onclick="plus();">+</button>&nbsp;<span id="counter">0</span>&nbsp;<button
+                class="minus" onclick="minus();">-</button>
         </div>
     </div>
-    
-    
+
+
     <script src="app.js" type="text/javaScript"></script>
 </body>
 

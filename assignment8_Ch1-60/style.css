@@ -62,7 +62,7 @@ font-weight: 800;
     #stu-records{
         overflow: auto;
     }
-    .sign-up-wrapper label{
+    .sign-up-wrapper label, #form-content label{
         display: block;
         width: 100%;
         height: 20px;
